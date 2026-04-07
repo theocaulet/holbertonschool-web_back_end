@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 This module contains a function that takes a string k
 and a value v which can be an integer of a float as arguments

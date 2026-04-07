@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 This module contains a function that takes a list of sequences
 and returns a list of tuples with each sequence and its length.
