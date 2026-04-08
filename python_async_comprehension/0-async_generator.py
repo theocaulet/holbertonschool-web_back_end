@@ -10,7 +10,7 @@ import asyncio
 import typing
 
 
-async def async_generator() -> typing.AsyncGenerator[float, None]:
+async def async_generator() -> typing.AsyncGenerator[float, None, None]:
     """Yields a random float between 0 and 10 every second for
     10 seconds.
     """
