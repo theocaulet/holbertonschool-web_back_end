@@ -18,13 +18,13 @@ function countStudents(path) {
             groups[field] = [firstname];
           }
         });
-        console.log(`Number of students: ${database.length}`);
+        let result = `Number of students: ${database.length}`;
         for (const field in groups) {
           if (Object.prototype.hasOwnProperty.call(groups, field)) {
-            console.log(`Number of students in ${field}: ${groups[field].length}. List: ${groups[field].join(', ')}`);
+            result += `\nNumber of students in ${field}: ${groups[field].length}. List: ${groups[field].join(', ')}`;
           }
         }
-        resolve();
+        resolve(result);
       }
     });
   });
