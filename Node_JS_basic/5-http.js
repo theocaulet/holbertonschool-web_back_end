@@ -11,7 +11,7 @@ const app = http.createServer((request, response) => {
     countStudents(database).then((result) => {
       response.end(`This is the list of our students\n${result}`);
     }).catch((error) => {
-      response.end(error.toString());
+      response.end(`This is the list of our students\n${error}`);
     });
   }
 });
