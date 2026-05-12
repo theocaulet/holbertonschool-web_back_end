@@ -8,6 +8,7 @@ app.get('/', (request, response) => {
 });
 app.get('/students', (request, response) => {
   countStudents(database).then((result) => {
+    response.set('Content-Type', 'text/plain');
     response.send(`This is the list of our students\n${result}`);
   }).catch((error) => {
     response.send(`This is the list of our students\n${error}`);
